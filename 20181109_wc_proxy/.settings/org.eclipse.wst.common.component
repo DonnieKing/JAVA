@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="20181109_wc_proxy">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="20181109_wc_proxy"/>
+        <property name="java-output-path" value="/20181109_wc_proxy/build/classes"/>
+    </wb-module>
+</project-modules>

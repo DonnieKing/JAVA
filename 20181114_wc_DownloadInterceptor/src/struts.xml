@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.custom.i18n.resources" value="mess"/>
+	 <constant name="struts.multipart.saveDir" value="f:/upload"></constant> 
+	<package name="hello" extends="struts-default">
+	 
+	 <interceptors>
+	<interceptor name="loginInterceptor" class="nuc.sw.interceptor.LoginInterceptor"/>	
+	</interceptors>
+	
+	<action name="uploadAction" class="nuc.sw.action.uploadAction" method="execute">
+		<!-- 判断文件类型 大小 扩展名 -->
+          <interceptor-ref name="fileUpload">
+              <param name="allowedTypes">image/png,image/jpeg,text/plain</param>
+              <param name="maximumSize">655350</param>
+          </interceptor-ref>
+ 		<!-- 引用默认栈 -->
+           <interceptor-ref name="defaultStack"/>
+	     <result name="uploadOK">
+	             /welcome.jsp
+	     </result>
+	     <param name="savePath">G:/uploadRealFile</param>
+	     <result name="input">/unload.jsp</result>     
+	</action> 
+	
+	 <action name="downloadAction" class="nuc.sw.action.DownloadAction" >
+	 <interceptor-ref name="loginInterceptor"/>
+	 <interceptor-ref name="defaultStack"/>
+			<result name="success" type="stream"> 		 			 						
+			<param name="contentType">${contentType}</param>			
+			<param name="inputName">targetFile</param>			
+			<param name="contentDisposition">attachment;filename=${downFileName}</param>	
+			</result>
+			<result name="login"> 
+				/login.jsp
+			</result>					
+	</action>
+	
+	<action name="loginAction" class="nuc.sw.action.LoginAction" method="LoginMethod">
+		<result name="loginOK">
+			/unload.jsp
+		</result>
+		<result name="login">
+			/login.jsp
+		</result>
+	</action>
+
+	</package>
+</struts>

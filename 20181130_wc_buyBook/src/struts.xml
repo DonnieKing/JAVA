@@ -4,10 +4,24 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
+<constant name="struts.enable.DynamicMethodInvocation" value="true" /> 
 	<constant name="struts.custom.i18n.resources" value="mess"/>
 	  
-	<package extends="struts-default" namespace="/" name="user">
-
+	<package extends="struts-default"   name="user">
+		<action name="registAction" class="nuc.sw.action.RegistAction" method="RegistMethod">
+			<result name="registOK">
+				/login.jsp
+			</result>
+			<result name="input">
+				 /regist.jsp
+			</result>
+		</action>
+		
+		<action name="loginAction" class="nuc.sw.action.LoginAction" method="LoginMethod">
+			<result name="loginOK">
+				/index.jsp
+			</result>
+		</action>
  
 
 	</package>

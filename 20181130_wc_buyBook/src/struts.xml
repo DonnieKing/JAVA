@@ -4,11 +4,16 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-<constant name="struts.enable.DynamicMethodInvocation" value="true" /> 
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" /> 
 	<constant name="struts.custom.i18n.resources" value="mess"/>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.multipart.saveDir" value="F:\NewEclipse\workspaces\20181130_wc_buyBook\WebContent\image"></constant>
 	  
 	<package extends="struts-default"   name="user">
+	
 		<action name="registAction" class="nuc.sw.action.RegistAction" method="RegistMethod">
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+            <param name="savePath">F:\NewEclipse\workspaces\20181130_wc_buyBook\WebContent\uploadRealFile</param>
 			<result name="registOK">
 				/login.jsp
 			</result>
@@ -17,11 +22,39 @@
 			</result>
 		</action>
 		
-		<action name="loginAction" class="nuc.sw.action.LoginAction" method="LoginMethod">
-			<result name="loginOK">
+		<action name="loginAction" class="nuc.sw.action.LoginAction" method="LoginMethod">	
+			<result name="loginOK" type="chain">
+				getBookAction
+			</result>
+			<result name="login">
+				/login.jsp
+			</result>
+		</action>
+		
+		<action name="getBookAction" class="nuc.sw.action.getBookAction" method="getBookMethod">	
+			<result name="getBookOK">
 				/index.jsp
 			</result>
 		</action>
+		
+		<action name="getTypeBookAction" class="nuc.sw.action.getTypeBookAction" method="getTypeBook">	
+			<result name="getTypeBookOK">
+				/index.jsp
+			</result>
+		</action>
+		
+		<action name="getBookDetailAction" class="nuc.sw.action.getBookDetailAction" method="getBookDetail">	
+			<result name="getBookDetailOK">
+				/detail.jsp
+			</result>
+		</action>
+		
+		<action name="getABookAction" class="nuc.sw.action.getABookAction" method="getABookMethod">	
+			<result name="getABookOK">
+				/index.jsp
+			</result>
+		</action>
+		 
  
 
 	</package>

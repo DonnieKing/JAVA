@@ -1,0 +1,289 @@
+	*{
+		margin:0;
+		padding:0;
+	}
+	#top{
+		width:100%;
+		height: 36px;
+		background-color: #8c222c;
+	}
+	#top_one{
+		color: #FFF;
+		width:1200px;
+		height: 36px;
+		margin:0 auto;
+		position: relative;
+	}
+	#top_content{
+		width:157px;
+		height:36px;
+		position: relative;	
+		font-size: 12px;
+		line-height: 36px;
+	}
+	#top_right{
+		color: #FFF;
+		font-size: 12px;
+		width:600px;
+		height: 36px;
+		position: absolute;
+		top:0;
+		right:0;
+	}
+
+	.ul_one{
+		position: relative;
+		margin:0 auto;
+		list-style: none;
+		width:580px;
+		height:36px;	 
+		right:0;
+	}
+	.ul_one li{
+		margin:0;
+		float: left;
+		margin-right: 40px;
+		line-height: 36px;
+ 		/*border:1px solid #6688dd;*/
+ 		width:74px;
+ 		text-align: center;
+	}
+	.out{
+		 width:90px;
+		 height: 36px;
+		 position: absolute;
+		 top:0;
+		 right:-40px;
+		 text-align: center;
+		 line-height: 36px;	
+	}
+	#top a{
+		text-decoration: none;
+		color: #fff;
+	}
+	.car{
+		width:32px;
+		height:36px;
+		background:url(../image/cars.png) no-repeat;
+		background-size: 25px 25px;
+		position: absolute;
+		left:231px;
+		top:5px;
+	}
+ 
+ 
+	#header{
+		width:100%;
+		height:80px;
+		background: #F2F1EA;
+		    }
+	#logo{
+		background: url(../image/logo.png);
+		background-size: 262px 45.06px;
+		width:262px;
+		height:46px;
+		position: relative;
+		left:145px;
+		top:-65px;
+	}
+	#searchForm{
+		z-index: 1;
+		width:688px;
+		height:40px;
+		/*background: red;*/
+		position: absolute;
+		top:56px;
+		right:100px;
+		border: 2px solid #8c222c;
+	}
+	.text{
+		width:596px;
+		height:38px;
+	}
+	.button{
+		width:92px;
+		height:38px;
+		background-color: #8c222c;
+		position: absolute;
+		top:0;	
+		right:0;
+	}
+	#info{
+		width:200px;
+		height:200px;
+		background: #BBCCDD;
+		position: absolute;
+		left:47%;
+		z-index: 100;
+		display: none;
+	}
+	#info_img img{
+		width: 160px;
+		height: 160px;
+		position: absolute;
+		left:20px;
+	}
+	#info_name{
+		font-size: 14px;
+		width: 160px;
+		height: 20px;
+		/*background: yellow;*/
+		position: absolute;
+		margin:0 auto;
+		left:20px;
+		bottom:10px;
+		text-align: center;
+		line-height: 20px;
+	}
+    #clock{
+		 width:170px;
+		 height:165px;
+		 background: green url(../image/timg.jpg) no-repeat;		  
+		 background-size: 170px 165px;
+		 position: relative;
+		 top:-46px;
+		 
+	   }
+
+	#box{
+		width:6px;
+		height:6px;
+		border-radius:50%;
+		background: red;
+		position: relative;
+		left:81.4px;
+		top:79px;
+		z-index: 10;
+	}
+	#hour{
+		 width:4.5px;
+		 height:22px;
+		 background: #bbccdd;
+		 position: absolute;
+		 left:80px;
+		 top:58px;
+		 z-index: 5;
+		 transform-origin:bottom;
+
+	}
+	#minute{
+		 width:3px;
+		 height:36px;
+		 background: #eeddaa;
+		 position: absolute;
+		 left:82px;
+		 top:45px;
+		 z-index: 3;
+		 transform-origin:bottom;
+	}
+	#second{
+		 width:2px;
+		 height:55px;
+		 background: #ccbbdd;
+		 position: absolute;
+		 left:83.6px;
+		 top:30px;
+		 transform-origin:bottom;
+	}
+	#book{
+		width:140px;
+		height:360px;
+		background: #F2F1EA;
+		font-size: 18px;
+		color: #000;
+		position: absolute;
+		top:150px;
+		left:180px;
+		border-radius: 30px;
+	}
+	#book a{
+		text-decoration: none;
+		color:#000;
+	}
+	#book_ul{
+		padding-top:10px;
+		height:300px;
+		width:100px;
+		/*background: yellow;*/
+		margin:0 auto;
+
+	}
+	#book_ul li{
+		width:100px;
+		height:20px;
+		display: inline-block;
+		/*background: red;*/
+		margin-bottom:10px;
+		line-height: 20px;
+		text-align: center;
+	}
+	#book_display{
+		width:1080px;
+		height:1000px;
+		/*background: red;*/
+		position: absolute;
+		top:150px;
+		right:50px;
+	}
+	#book_display a{
+		text-decoration: none;
+		color:#FFF;
+	}
+	#book_display_all{
+		width:1040px;
+		height:960px;
+		/*background: yellow;*/
+		margin:20px auto;
+	}
+	#book_display_detail{
+		margin-left: 50px;
+		width:180px;
+		height:265px;
+		/*background: blue;*/
+		margin-top:20px;
+		margin-right: 20px;
+		float: left;
+		position: relative;
+	}
+	#book_display_detail img{
+		width:140px;
+		height:165px;
+		position: relative;
+		top:0;
+		left:20px;
+	}
+	#book_title{
+		width:140px;
+		height:20px;
+		/*background: gray;*/
+		position: absolute;
+		top:165px;
+		left:20px;
+		line-height: 20px;
+		color:#000;
+		font-size: 14px;
+	}
+	#book_author{
+		width:140px;
+		height:20px;
+		position: absolute;
+		top:198px;
+		left:20px;
+		font-size: 14px;
+		color:#999999;
+		line-height: 20px;
+		/*background: #ffaa22;*/
+	}
+	#book_price{
+		width:140px;
+		height:30px;
+		position: absolute;
+		top:232px;
+		left:20px;
+		font-size: 18px;
+		line-height: 30px;
+		color:#bf7f5f;
+		/*background: #ffbb22;*/	
+	}
+
+	

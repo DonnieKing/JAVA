@@ -1,0 +1,227 @@
+*{
+		margin:0;
+		padding:0;
+	}
+	#top{
+		width:100%;
+		height: 36px;
+		background-color: #8c222c;
+	}
+	#top_one{
+		color: #FFF;
+		width:1200px;
+		height: 36px;
+		margin:0 auto;
+		position: relative;
+	}
+	#top_content{
+		width:157px;
+		height:36px;
+		position: relative;	
+		font-size: 12px;
+		line-height: 36px;
+	}
+	#top_right{
+		color: #FFF;
+		font-size: 12px;
+		width:600px;
+		height: 36px;
+		position: absolute;
+		top:0;
+		right:0;
+	}
+
+	.ul_one{
+		position: relative;
+		margin:0 auto;
+		list-style: none;
+		width:580px;
+		height:36px;	 
+		right:0;
+	}
+	.ul_one li{
+		margin:0;
+		float: left;
+		margin-right: 40px;
+		line-height: 36px;
+ 		/*border:1px solid #6688dd;*/
+ 		width:74px;
+ 		text-align: center;
+	}
+	.out{
+		 width:90px;
+		 height: 36px;
+		 position: absolute;
+		 top:0;
+		 right:-40px;
+		 text-align: center;
+		 line-height: 36px;	
+	}
+	#top a{
+		text-decoration: none;
+		color: #fff;
+	}
+	.car{
+		width:32px;
+		height:36px;
+		background:url(../image/cars.png) no-repeat;
+		background-size: 25px 25px;
+		position: absolute;
+		left:231px;
+		top:5px;
+	}
+
+	#searchForm{
+		z-index: 1;
+		width:688px;
+		height:40px;
+		/*background: red;*/
+		position: absolute;
+		top:56px;
+		right:100px;
+		border: 2px solid #8c222c;
+	}
+
+	#info{
+		width:200px;
+		height:200px;
+		background: #BBCCDD;
+		position: absolute;
+		left:47%;
+		z-index: 100;
+		display: none;
+	}
+	#info_img img{
+		width: 160px;
+		height: 160px;
+		position: absolute;
+		left:20px;
+	}
+	#info_name{
+		font-size: 14px;
+		width: 160px;
+		height: 20px;
+		/*background: yellow;*/
+		position: absolute;
+		margin:0 auto;
+		left:20px;
+		bottom:10px;
+		text-align: center;
+		line-height: 20px;
+	}
+	#logo{
+		width:100%;
+		height:120px;
+		/*background: red;*/
+		position: relative;
+	}
+	#logo img{
+		width:206px;
+		height:35px;
+		position: absolute;
+		left:250px;
+		top:40px;
+	}
+	#book_info{
+		width:1000px;
+		height:700px;
+		/*background: blue;*/
+		margin:20px auto;
+		position: relative;
+	}
+	#book_info_title{
+		width:1000px;
+		height:26px;
+		/*background: yellow;*/
+		padding-top:20px;
+		font-size: 20px;
+		padding-left: 20px;
+		line-height: 26px;
+		color: #333;
+		font-weight: bold;
+	}
+	#book_info_image{
+		width:200px;
+		height:230px;
+		/*background: red;*/
+		margin-top: 10px;
+		margin-left: 6px;
+	}
+	#book_info_image img{
+		width:180px;
+		height:200px;
+		margin-top:10px;
+		margin-left: 10px;
+	}
+	#book_info a{
+		text-decoration: none;
+		color:#000;
+	}
+	#book_info a:hover{
+		text-decoration: none;
+		color:blue;
+	}
+	#buy{
+		width:80px;
+		height:30px;
+		/*background: red;*/
+		font-size: 24px;
+		position: absolute;
+		left:50px;
+		text-align: center;
+	}
+	#book_info_ul ul{
+		list-style: none;
+		font-size: 14px;
+	}
+	#book_info_ul{
+		width:700px;
+		height:550px;
+		/*background: gray;*/
+		position: absolute;
+		top:50px;
+		left:240px;
+		margin-top:13px;
+	}
+	#book_info_ul_one li{
+		width:200px;
+		height: 20px;
+		/*background: red;*/
+		margin-bottom: 5px;
+		margin-left: 10px;
+		margin-top:5px;
+	}
+	#book_info_ul_two{
+		margin-top:5px;
+		width:200px;
+		height:150px;
+		/*background: red;*/
+		position: absolute;
+		top:0;
+		left:300px;
+	}
+	#book_info_ul_two li{
+		width:200px;
+		height: 20px;
+		margin-bottom: 5px;
+		margin-top:5px;
+		/*background: red;*/
+	}
+	#book_content{
+		width:90px;
+		height:25px;
+		/*background: #ffaa22;*/
+		position: relative;
+		top:3px;
+		left:10px;
+		line-height: 25px;
+		font-weight:   700;
+	}
+	#book_info_intro{
+		width:650px;
+		height:320px;
+		/*background: yellow;*/
+		margin:13px auto;
+		font-size: 13px;
+		line-height: 22px;
+	}

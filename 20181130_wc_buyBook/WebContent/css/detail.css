@@ -122,6 +122,25 @@
 		left:250px;
 		top:40px;
 	}
+	#success{
+		width:150px;
+		height:150px;
+		background:#F0F0F0;
+		position:absolute;
+		z-index:10;
+		left:45%;
+		top:35%;
+		border-radius:20px;
+		display:none;
+	}
+	#success_text{
+		margin:10px auto;
+		width:140px;
+		height:130px;
+		font-size:20px;
+		color:#000;
+		line-height:130px;
+	}
 	#book_info{
 		width:1000px;
 		height:700px;

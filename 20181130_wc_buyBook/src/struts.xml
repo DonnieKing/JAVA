@@ -54,6 +54,25 @@
 				/index.jsp
 			</result>
 		</action>
+		
+		<action name="buyBookAction" class="nuc.sw.action.buyBookAction" method="buyBookMethod">	
+			<result name="insertOrderOK" type="redirectAction">			 
+				 <param name="actionName">getBookDetailAction</param>
+				 <param name="names">${order.getBook_name()}</param>
+			</result>
+		</action>
+		
+		<action name="getOrderAction" class="nuc.sw.action.getOrderAction" method="getOrderMethod">	
+			<result name="getOrderOK">
+				/order.jsp
+			</result>
+		</action>
+		
+		<action name="deleteOrderAction" class="nuc.sw.action.deleteOrderAction" method="deleteOrderMethod">	
+			<result name="deleteOrderOK" type="chain" >
+				getOrderAction
+			</result>
+		</action>
 		 
  
 

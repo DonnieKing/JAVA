@@ -7,6 +7,7 @@ import com.opensymphony.xwork2.inject.util.Strings;
 
 import nuc.sw.conn.Conn;
 import nuc.sw.entity.Book;
+import nuc.sw.entity.Order;
 import nuc.sw.entity.User;
 
 import java.sql.*;
@@ -158,23 +159,66 @@ public class Dao {
 	}
 	
 	//购买书加入购物车
-	public int insertOrder()
+	public int insertOrder(Order order)
 	{
 		int rs=0;
 		try {
 			Conn f = new Conn();
 			Connection conn = f.getConn();
 			PreparedStatement pst=null;
-			String insert_order = "insert into order (tel,user_name,book_name,book_price,address) values(?,?,?,?)";
+			String insert_order = "INSERT INTO `order`(tel,user_name,book_name,book_price,image,address) VALUES (?,?,?,?,?,?)";
 			pst =conn.prepareStatement(insert_order);
-			User user = new User();
-			Book book = new Book();
-			pst.setString(1, user.getTel());
-			pst.setString(2, user.getName());
-			pst.setFloat(3, book.getPrice());
-			pst.setString(4, user.getAddress());
+			//Order order = new Order();
+			pst.setString(1, order.getTel());
+			pst.setString(2, order.getUser_name());
+			pst.setString(3, order.getBook_name());
+			pst.setFloat(4, order.getBook_price());
+			pst.setString(5, order.getImage());
+			pst.setString(6, order.getAddress());
 			rs = pst.executeUpdate();
-			
+			System.out.println("订单创建成功");
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return rs;
+	}
+	//获取订单信息
+	public List<Order> listorder(String tel){
+		ResultSet rs = null;
+		List<Order> listorders = new ArrayList<Order>();
+		try {
+			Conn g = new Conn();
+			Connection conn = g.getConn();
+			PreparedStatement pst = null;
+			String select_order = "SELECT * FROM `order` WHERE tel="+"'"+tel+"'";
+			pst = conn.prepareStatement(select_order);
+			rs = pst.executeQuery();
+			while(rs.next())
+			{
+				Order order = new Order();
+				order.setTel(rs.getString("tel"));
+				order.setUser_name(rs.getString("user_name"));
+				order.setBook_name(rs.getString("book_name"));
+				order.setBook_price(rs.getFloat("book_price"));
+				order.setImage(rs.getString("image"));
+				order.setAddress(rs.getString("address"));
+				listorders.add(order);
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		return listorders;
+	}
+	//删除订单
+	public int deleteOrder(String tel,String book_name) {
+		int rs = 0;
+		try {
+			Conn h = new Conn();
+			Connection conn = h.getConn();
+			PreparedStatement pst = null;
+			String delete_order="DELETE  FROM `order` WHERE tel="+"'"+tel+"'"+ "AND book_name="+"'"+book_name+"'";
+			pst = conn.prepareStatement(delete_order);
+			rs =pst.executeUpdate();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

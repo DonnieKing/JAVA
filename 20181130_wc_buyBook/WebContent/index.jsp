@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Insert title here</title>
+<title>孔夫子卖书</title>
 <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
@@ -21,12 +21,12 @@
 				<ul class="ul_one">
 					<li id="username">${ sessionScope.tel}</li>
 					<li>消息</li>
-					<li><a href="#">购物车</a></li>
+					<li><a href="getOrderAction?tel=${ sessionScope.tel}">购物车</a></li>
 					<li><a href="#">我的订单</a></li>				
 					<li>客服</li>
 				</ul>
 				<div class="car"></div>
-				<div class="out"><a href="">退出</a></div>
+				<div class="out"><a href="login.jsp">退出</a></div>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,36 @@
+.fix-info{
+	position: relative;
+	top: 20px;
+	left:500px;
+	width: 400px;
+	height:430px;
+	border-radius:15px;
+	background: #74CEFE;
+}
+.fix-info ul{
+	list-style: none;
+}
+.first-info{
+	padding-top: 20px;
+}
+.fix-info ul li{
+	width: 380px;
+	height: 45px;
+	margin-bottom: 10px;
+	margin-left:-15px;
+}
+.fix-info ul li span{
+	display: inline-block;
+	width: 100px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	/*background: red;*/
+}
+.fix-info ul li input{
+	padding-left:10px;
+	width: 230px;
+	height: 30px;
+	border: 1px solid #F1F3F4;
+}
+ 

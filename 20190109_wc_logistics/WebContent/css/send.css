@@ -1,0 +1,371 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial,"Î¢ÈíÑÅºÚ","Helvetica Neue",Helvetica,sans-serif;
+}
+#header{
+	width: 100%;
+	height: 77px;
+	background: lightblue;
+	position: relative;
+	z-index: 5;
+}
+#header .header-main{
+	width: 1200px;
+	height: 77px;
+	margin: 0 auto;
+	/*background: blue;*/
+	position: relative;
+}
+.header-left{
+	float: left;
+	width: 220px;
+	height: 77px;
+	/*background: yellow;*/
+}
+.header-left .logo img{
+	margin-top: 25px;
+}
+.header-right{
+	float: left;
+	width: 700px;
+	height: 77px;
+	/*background: #9966aa;*/
+}
+.header-right ul{
+	list-style: none;
+
+}
+.li-one{
+	margin-left: 20px;
+}
+.header-right ul li{
+	float: left;
+	/*clear: both;*/
+	width: 80px;
+	height: 30px;
+	padding-left: 30px;
+	line-height: 75px;
+    margin-right: 55px;
+    color: #202027;
+    font-size: 14px;
+}
+.content{
+	width: 100%;
+	height: 700px;
+	background: #EEF1F4;
+	position: relative;
+}
+.sender{
+	width: 610px;
+	height: 315px;
+	background: #fff;
+	position: absolute;
+	left:120px;
+	top:40px;
+	margin-right: 5px;
+}
+.sendlabel{
+	width: 27px;
+    height: 52px;
+    font-size: 18px;
+    color: #fff;
+    background: url(../images/sendBg.png) no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 99;
+    text-align: center;
+    line-height: 50px;
+}
+
+.send-info div{
+	width: 500px;
+	height: 50px;
+	/*background: #33aadd;*/
+	margin-bottom: 20px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.send-info span{
+	text-align: right;
+    float: left;
+    font-size: 14px;
+    color: #606266;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+}
+.send-info input[type="text"]{
+	float: left;
+	width: 350px;
+	height: 32px;
+	border: 1px solid #DCDFE6;
+	margin-top: 7px;
+	border-radius: 3px;
+}
+.send-info-address{
+	position: relative;
+	left:-25px;
+}
+
+
+.receiver{
+	width: 610px;
+	height: 315px;
+	background: #fff;
+	position: absolute;
+	right: 120px;
+	top:40px;
+}
+.receivelabel{
+	width: 27px;
+    height: 52px;
+    font-size: 18px;
+    color: #fff;
+    background: url(../images/receiveBg.png) no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 99;
+    text-align: center;
+    line-height: 50px;
+}
+.receive-info div{
+	width: 500px;
+	height: 50px;
+	/*background: #33aadd;*/
+	margin-bottom: 20px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.receive-info span{
+	text-align: right;
+    float: left;
+    font-size: 14px;
+    color: #606266;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+}
+.receive-info input[type="text"]{
+	float: left;
+	width: 350px;
+	height: 32px;
+	border: 1px solid #DCDFE6;
+	margin-top: 7px;
+	border-radius: 3px;
+}
+.receive-info-address{
+	position: relative;
+	left:-25px;
+}
+.otherInfo{
+	width: 1240px;
+	height: 280px;
+	background: #fff;
+	position: absolute;
+	top:380px;
+	left:116px;
+}
+.itemtype{
+	width: 250px;
+	height: 40px;
+	/*background: #33adda;*/
+	position: absolute;
+	top:25px;
+	left:35px;
+}
+.itemtype span{
+	color: #606266;
+	font-size: 14px;
+	line-height: 40px;
+}
+.itemtype select{
+	font-family: "Î¢ÈíÑÅºÚ";
+    margin-left: 3px;
+    /*background: rgba(0,0,0,0);*/
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    color: #000;
+    border: 1px #1a1a1a solid;
+    border-radius: 5px;
+
+}
+.itemtype option{
+    color: black;
+    /*background: #A6E1EC;*/
+    line-height: 20px;
+}
+.itemtype select:focus{
+    border: 2px #ddd solid;
+    box-shadow: 0 0 15px 1px #DDDDDD;
+}
+.itemtype option:hover{
+    background: #fff;
+}
+.itemName{
+	width: 280px;
+	height: 40px;
+	/*background: #33adda;*/
+	position: absolute;
+	top:25px;
+	left:290px;
+}
+.itemName span{
+	color: #606266;
+	font-size: 14px;
+	line-height: 40px;
+}
+.itemName input[type="text"]{
+	width: 180px;
+	height: 32px;
+	border: 1px solid #DCDFE6;
+	/*margin-top: 7px;*/
+	border-radius: 3px;
+}
+.itemQuality{
+	width: 210px;
+	height: 40px;
+	/*background: #33adda;*/
+	position: absolute;
+	top:78px;
+	left:34px;
+}
+.itemQuality span{
+	color: #606266;
+	font-size: 14px;
+	line-height: 40px;
+}
+.itemQuality input[type="text"]{
+	width: 60px;
+	height: 32px;
+	border: 1px solid #DCDFE6;
+	/*margin-top: 7px;*/
+	border-radius: 3px;
+	text-align: center;
+}
+.itemVolume{
+	width: 230px;
+	height: 40px;
+	/*background: #33adda;*/
+	position: absolute;
+	top:78px;
+	left:290px;
+}
+.itemVolume span{
+	color: #606266;
+	font-size: 14px;
+	line-height: 40px;
+}
+.itemVolume input[type="text"]{
+	width: 60px;
+	height: 32px;
+	border: 1px solid #DCDFE6;
+	/*margin-top: 7px;*/
+	border-radius: 3px;
+	text-align: center;
+}
+.itemNumber{
+	width: 230px;
+	height: 40px;
+	/*background: #33adda;*/
+	position: absolute;
+	top:78px;
+	left:580px;
+}
+.itemNumber span{
+	color: #606266;
+	font-size: 14px;
+	line-height: 40px;
+}
+.itemNumber input[type="text"]{
+	width: 60px;
+	height: 32px;
+	border: 1px solid #DCDFE6;
+	/*margin-top: 7px;*/
+	border-radius: 3px;
+	text-align: center;
+}
+.paymentMethod{
+	width: 250px;
+	height: 40px;
+	/*background: #33adda;*/
+	position: absolute;
+	top:130px;
+	left:35px;
+}
+.paymentMethod span{
+	color: #606266;
+	font-size: 14px;
+	line-height: 40px;
+}
+.paymentMethod select{
+	font-family: "Î¢ÈíÑÅºÚ";
+    margin-left: 3px;
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    color: #000;
+    border: 1px #1a1a1a solid;
+    border-radius: 5px;
+
+}
+.paymentMethod option{
+    color: black;
+    line-height: 20px;
+}
+.paymentMethod select:focus{
+    border: 2px #ddd solid;
+    box-shadow: 0 0 15px 1px #DDDDDD;
+}
+.paymentMethod option:hover{
+    background: #fff;
+}
+.expressWay{
+	width: 250px;
+	height: 40px;
+	/*background: #33adda;*/
+	position: absolute;
+	top:130px;
+	left:290px;
+}
+.expressWay span{
+	color: #606266;
+	font-size: 14px;
+	line-height: 40px;
+}
+.expressWay select{
+	font-family: "Î¢ÈíÑÅºÚ";
+    margin-left: 3px;
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    color: #000;
+    border: 1px #1a1a1a solid;
+    border-radius: 5px;
+
+}
+.expressWay option{
+    color: black;
+    line-height: 20px;
+}
+.expressWay select:focus{
+    border: 2px #ddd solid;
+    box-shadow: 0 0 15px 1px #DDDDDD;
+}
+.expressWay option:hover{
+    background: #fff;
+}
+
+.class-submit input[type="submit"]{
+	width: 173px;
+	height: 50px;
+	background: #409EFF;
+	position: absolute;
+	top:200px;
+	left:530px;
+	border:none;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 5px;
+}

@@ -26,10 +26,22 @@
 						<div class="detail-state"><s:property value="#order.orderState"/></div>
 						<div class="detail-operation">
 							<a href="getOrderDetailAction?orderId=<s:property value="#order.orderId"/>" target="_blank">查看详情</a>
+							<s:if test="%{#session.tel =='000000'}">
+							<a href="getAOrderAction?orderId=<s:property value="#order.orderId"/>" id="fix" target="_blank">修改</a>
+							</s:if>
 						</div>
 					</div>	
 				</s:iterator>
 				</div>
+				
+			
 			</nav>
+			
+			
+		<script>
+				 
+				
+				
+		</script>
 </body>
 </html>

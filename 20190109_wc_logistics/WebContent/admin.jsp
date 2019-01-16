@@ -32,12 +32,9 @@
 			</div>
 			<div onclick="pageClick(this)">
 				<img src="images/icon-5.png" />
-				<a href="suggManager.jsp" target="main">用户建议管理</a>
+				<a href="getMessageAction" target="main">用户建议管理</a>
 			</div>
-			<div onclick="pageClick(this)">
-				<img src="images/icon-5.png" />
-				<a href="announce.jsp" target="main">官网通告管理</a>
-			</div>
+			
 		</div>
 	</div>
 

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" /> 
+	<constant name="struts.custom.i18n.resources" value="mess"/>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.multipart.saveDir" value="F:\NewEclipse\workspaces\20190109_wc_logistics\WebContent\tempFile"></constant>
+	  
+	<package extends="struts-default"   name="user">
+
+		<action name="registAction" class="nuc.sw.action.registAction" method="RegistMethod">
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+            <param name="savePath">F:\NewEclipse\workspaces\20190109_wc_logistics\WebContent\uploadRealFile</param>
+			<result name="registOK">
+				/login.jsp
+			</result>
+			<result name="input">
+				 /regist.jsp
+			</result>
+		</action>
+		
+		<action name="loginAction" class="nuc.sw.action.loginAction" method="LoginMethod">
+			<result name="loginOK">
+				/index.jsp
+			</result>
+			<result name="login">
+				 /login.jsp
+			</result>
+		</action>
+		
+		<action name="getUserInfoAction" class="nuc.sw.action.getUserInfoAction" method="getUserInfoMethod">
+			<result name="getUserInfoOK">
+				/userCenter.jsp
+			</result>	 
+		</action>
+		
+		<action name="updateUserAction" class="nuc.sw.action.updateUserAction" method="updateUserMethod">
+			<result name="updateUserOK" type="chain">
+				getUserInfoAction
+			</result> 
+		</action>
+		
+		<action name="getUserOrderAction" class="nuc.sw.action.getUserOrderAction" method="getUserOrderMethod">
+			<result name="getUserOrderOK" >
+				/myExpress.jsp
+			</result>			 
+		</action>
+		
+		<action name="getOrderDetailAction" class="nuc.sw.action.getOrderDetailAction" method="getOrderDetailMethod">
+			<result name="getOrderDetailOK" >
+				/orderDetail.jsp
+			</result>			 
+		</action>
+		
+		<action name="insertMessageAction" class="nuc.sw.action.insertMessageAction" method="insertMessageMethod">
+			<result name="insertMessageOK" >
+				/mySuggest.jsp
+			</result>			 
+		</action>
+		
+		<action name="selectTrailAction" class="nuc.sw.action.selectTrailAction" method="selectTrailMethod">
+			<result name="selectWayOK" >
+				/wayTrail.jsp
+			</result>			 
+		</action>
+		
+		<action name="insertOrderAction" class="nuc.sw.action.insertOrderAction" method="insertOrderMethod">
+			<result name="insertOrderOK" >
+				/userInfo.jsp
+			</result>			 
+		</action>
+		
+		<action name="clearSessionAction" class="nuc.sw.action.clearSessionAction" method="clearSessionMethod">
+			<result name="clearSessionOK" >
+				/index.jsp
+			</result>			 
+		</action>
+		
+		<action name="selectExpresstimeAction" class="nuc.sw.action.selectExpresstimeAction" method="selectExpresstimeMethod">
+			<result name="selectTimeOK" >
+				/expressPrice.jsp
+			</result>			 
+		</action>
+		
+		<action name="getAllOrderAction" class="nuc.sw.action.getAllOrderAction" method="getAllOrderMethod">
+			<result name="getAllOrderOK" >
+				/myExpress.jsp
+			</result>			 
+		</action>
+		
+		<action name="getAOrderAction" class="nuc.sw.action.getAOrderAction" method="getAOrderMethod">
+			<result name="getAOrderOK" >
+				/fixMyexpress.jsp
+			</result>			 
+		</action>
+		
+		<action name="updateOrderAction" class="nuc.sw.action.updateOrderAction" method="updateOrderMethod">
+			<result name="updateOrderOK" >
+				/admin.jsp
+			</result>			 
+		</action>
+		
+		<action name="getWayTableAction" class="nuc.sw.action.getWayTableAction" method="getWayTableMethod">
+			<result name="getWayTableOK" >
+				/wayTable.jsp
+			</result>			 
+		</action>
+		
+		<action name="deleteWayAction" class="nuc.sw.action.deleteWayAction" method="deleteWayMethod">
+			<result name="deleteWayOK" >
+				/admin.jsp
+			</result>			 
+		</action>
+		
+		<action name="getAWayAction" class="nuc.sw.action.getAWayAction" method="getAWayMethod">
+			<result name="getAWayOK" >
+				/fixWay.jsp
+			</result>			 
+		</action>
+		
+		<action name="updateWayAction" class="nuc.sw.action.updateWayAction" method="updateWayMethod">
+			<result name="updateWayOK" >
+				/admin.jsp
+			</result>			 
+		</action>
+		
+		<action name="getIncomeAction" class="nuc.sw.action.getIncomeAction" method="getIncomeMethod">
+			<result name="getIncomeOK" >
+				/income.jsp
+			</result>			 
+		</action>
+		
+		<action name="getPayAction" class="nuc.sw.action.getPayAction" method="getPayMethod">
+			<result name="getPayOK" >
+				/pay.jsp
+			</result>			 
+		</action>
+		
+		<action name="insertPayAction" class="nuc.sw.action.insertPayAction" method="insertPayMethod">
+			<result name="insertPayOK" >
+				/admin.jsp
+			</result>			 
+		</action>
+		
+		<action name="getAPayAction" class="nuc.sw.action.getAPayAction" method="getAPayMethod">
+			<result name="getAPayOK" >
+				/fixPay.jsp
+			</result>			 
+		</action>
+		
+		<action name="updatePayAction" class="nuc.sw.action.updatePayAction" method="updatePayMethod">
+			<result name="updatePayOK" >
+				/admin.jsp
+			</result>			 
+		</action>
+		
+		<action name="getMessageAction" class="nuc.sw.action.getMessageAction" method="getMessMethod">
+			<result name="getMessageOK" >
+				/suggManager.jsp
+			</result>			 
+		</action>
+		
+		<action name="deleteMessageAction" class="nuc.sw.action.deleteMessageAction" method="deleteMessMethod">
+			<result name="deleteMeOK" >
+				/admin.jsp
+			</result>			 
+		</action>
+		 
+		
+		
+		 
+ 
+
+	</package>
+</struts>

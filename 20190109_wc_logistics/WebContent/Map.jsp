@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>百度在线地图</title>
+<title>中北速递站点</title>
 <link rel="stylesheet" href="./css/Map.css">
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=mS7iFfCcMbLBbdGPA7DzeBEsvV230dwh"></script>
 </head>

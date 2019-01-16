@@ -1,0 +1,131 @@
+.content-main-header{
+	position: relative;
+	width: 1042px;
+	height: 50px;
+	/*background: red;*/
+	border-bottom: 1px solid #dee1e5;
+}
+.content-main-header img{
+	position: absolute;
+	top:4px;
+}
+.content-main-header span{
+	position: absolute;
+	left:55px;
+    line-height: 50px;
+    font-size: 18px;
+}
+.content-main-info{
+	margin-top: 6px;
+	width: 1042px;
+	height: 390px;
+	background: #FFF;
+}
+.content-main-info-left{
+	position: absolute;
+	top:130px;
+	left:35px;
+	width: 240px;
+	height: 240px;
+	border-right: 2px solid #DEE1E5;
+	/*background: #aabb99;*/
+
+}
+.content-main-info-left img{
+	position: absolute;
+	top:30px;
+	left:40px;
+	width:150px;
+	height: 150px;	
+	border-radius: 50%;
+}
+.content-main-info-right{
+	display: none;
+	background: #FFF;
+}
+.content-main-info-right{
+	position: absolute;
+	top:75px;
+	left: 330px;
+	width: 500px;
+	height: 360px;
+	/*background: red;*/
+}
+.fix-info{
+	position: absolute;
+	right:0;
+	width: 80px;
+	height: 35px;
+	background: lightblue;
+	text-align: center;
+	font-size: 14px;
+	line-height: 35px;
+	color: #000;
+	cursor: pointer;
+}
+.user-info{
+	position: absolute;
+	top:80px;
+	left: 330px;
+	width: 500px;
+	height: 360px;
+	background: #FFF;
+}
+.user-info div{
+	position: relative;
+	width: 400px;
+	height: 40px;
+	margin: 20px auto;
+	/*background: #66aacc;*/
+	line-height: 40px;
+}
+.content-main-info-right div{
+	position: relative;
+	width: 400px;
+	height: 40px;
+	margin: 20px auto;
+	/*background: #66aacc;*/
+	line-height: 40px;
+}
+input[type=text]{
+	position: absolute;
+	top:2px;
+	left:66px;
+	width: 300px;
+	height: 30px;
+	border: 1px solid #E9E9E9;
+	border-radius: 3px;
+	padding-left:10px;
+}
+ .content-main-info input:focus{
+	background-color: #fff;
+	border: 1px solid #ed1c24;
+	outline: none;
+}
+input[type="radio"]{
+	display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    border-radius: 50%;
+    margin-bottom: 4px;
+    border: 1px solid #CCCCCC;
+    margin-left: 20px;
+}
+.class-password{
+	/*display: none;*/
+}
+.class-submit{
+	position: relative;
+	left:145px;
+	width: 85px;
+	height: 40px;
+	background: #409EFF;
+	color: #fff;
+	font-size: 14px;
+    cursor: pointer;
+    border:1px solid #E9E9E9;
+    background: #33a2f7;
+	border-radius: 8px;
+}

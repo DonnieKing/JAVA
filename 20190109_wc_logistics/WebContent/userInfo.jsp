@@ -25,6 +25,15 @@
 					<a href=""><li>帮助与反馈</li></a>
 				</ul>
 			</div>
+			<div class="header-info">
+				<a href="">
+					<div class="username">
+					<img src="./images/login.png">
+					<span>欢迎你：${sessionScope.tel }</span>
+					<div class="out"><a href="clearSessionAction">退出</a></div>
+					</div>
+				</a>
+			</div>
 		</div>
 	</div>
 

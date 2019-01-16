@@ -1,0 +1,33 @@
+.express-border{
+	width: 1042px;
+	height: 440px;
+	background: #fff;
+	margin-top: 5px;
+}
+.express-border ul{
+	padding-top: 10px;
+	width: 1042px;
+	height: 32px;
+	list-style: none;
+	text-align: center;
+	line-height: 32px; 
+	color: #000;
+}
+.express-border ul li{
+	float:left;
+	width:130px;
+	height: 30px;
+	/*border:1px solid #000;*/
+}
+.order-number,.detail-number{
+	margin-left: -40px;
+}
+
+
+.order-detail{
+	font-size: 14px;
+ }
+ .order-detail a{
+ 	text-decoration: none;
+ 	color: #000;
+ }

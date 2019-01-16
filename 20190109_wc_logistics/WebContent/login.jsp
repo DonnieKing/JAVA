@@ -19,7 +19,7 @@
 			</div>
 			<div class="header-right">
 				<ul class="header-right-ul">
-					<a href="index.html"><li class="li-one">首页</li></a>
+					<a href="index.jsp"><li class="li-one">首页</li></a>
 					<a href=""><li>在线寄件</li></a>
 					<a href=""><li>在线查件</li></a>
 					<a href=""><li>帮助与反馈</li></a>
@@ -42,7 +42,7 @@
 						账号：<input type="text" name="tel" placeholder="请输入手机号">
 					</div>	
 					<div class="login-password">
-						密码：<input type="text" name="userPassword" placeholder="请输入密码">
+						密码：<input type="password" name="userPassword" placeholder="请输入密码">
 					</div>	
 					<div class="login-submit">
 						<input class="login-submit-one" type="submit" value="登录">

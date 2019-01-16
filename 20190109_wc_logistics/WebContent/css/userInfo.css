@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial,"Î¢ÈíÑÅºÚ","Helvetica Neue",Helvetica,sans-serif;
+}
+#header{
+	width: 100%;
+	height: 77px;
+	/*background: lightblue;*/
+	position: relative;
+	z-index: 5;
+}
+#header .header-main{
+	width: 1200px;
+	height: 77px;
+	margin: 0 auto;
+	/*background: blue;*/
+	position: relative;
+}
+.header-left{
+	float: left;
+	width: 220px;
+	height: 77px;
+	/*background: yellow;*/
+}
+.header-left .logo img{
+	margin-top: 25px;
+}
+.header-right{
+	float: left;
+	width: 700px;
+	height: 77px;
+	/*background: #9966aa;*/
+}
+.header-right ul{
+	list-style: none;
+
+}
+.li-one{
+	margin-left: 20px;
+}
+.header-right ul li{
+	float: left;
+	/*clear: both;*/
+	width: 80px;
+	height: 30px;
+	padding-left: 30px;
+	line-height: 75px;
+    margin-right: 55px;
+    color: #202027;
+    font-size: 14px;
+}
+.content{
+	position: relative;
+	width: 100%;
+	height: 580px;
+	background: #EEF1F4;
+}
+.content-ul{
+	position: relative;
+	top:15px;
+	left:150px;
+	width: 148px;
+	height: 280px;
+	background: #fff;
+	list-style: none;
+}
+.content-ul li{
+	display: block;
+}
+.content-ul li.active{
+	color: #33A2F7;
+}
+.content-main nav{
+	display: none;
+}
+nav.active{
+	display: block;
+}
+
+.content-ul a{
+	text-decoration: none;
+	color: #000;
+}
+.content-ul a:hover{
+	color: #33A2F7;
+}
+.nav-top{
+	width: 100%;
+	height: 100px;
+	background: url(../images/left_menu_top.jpg) no-repeat;
+	margin-bottom: 6px;
+}
+.nav-item{
+	width:70px;
+	height:18px;
+	line-height: 18px;
+	font-size: 14px;
+	margin-bottom: 16px;
+	margin-left: 42px;
+}
+.nav-bottom{
+	position: relative;
+	bottom:-22px;
+	width: 100%;
+	height: 81px;
+	background: url(../images/left_menu_bottom.jpg) no-repeat;
+}
+.content-main{
+	position: absolute;
+	top:13px;
+	right:130px;
+	width: 1042px;
+	height: 550px;
+	/*background: #33aabb;*/
+}
+.header-info{
+	position: relative;
+	float:left;
+	right:-80px;
+	width: 250px;
+	height: 77px;
+	/*background: #bbcc33;*/
+}
+.header-info .username img{
+	position: absolute;
+	left: -65px;
+}
+.header-info .username {
+	position: absolute;
+	top:33px;
+	left:148px;
+	font-family: "ËÎÌå";
+	cursor: pointer;
+	font-size: 14px;
+}
+.header-info a{
+	color: #25A4BB;
+}
+.username span{
+	display: inline-block;
+	width: 160px;
+	height: 40px;
+	/*background: #22aaff;*/
+	line-height: 40px;
+	position: absolute;
+	left: -48px;
+	top:-13px;
+}
+.username .out{
+	width: 50px;
+	height: 40px;
+	position: absolute;
+	left:108px;
+	top: -4px;
+}
+.out a{
+	text-decoration: none;
+	color: #000;
+}

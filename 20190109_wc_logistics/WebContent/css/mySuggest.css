@@ -1,0 +1,156 @@
+.nav-bar{
+	width:1042px;
+	height: 40px;
+	background:  url(../images/navbar.png) no-repeat;
+	border-bottom: 1px solid #DEE1E5;
+}
+.nav-bar span{
+	position: relative;
+	left: 50px;
+	font-size: 18px;
+	line-height: 40px;
+}
+.nav-content{
+	width: 1042px;
+	height: 515px;
+	background: #fff;
+}
+.nav-title{
+	width: 1042px;
+	height: 80px;
+	border-bottom: 1px solid #DEE1E5;
+}
+.nav-title span{
+	padding-top: 3px;
+	width: 1042px;
+	height: 26px;
+	display: block;
+	color: #848A8E;
+	font-size: 14px;
+	text-align: center;
+	line-height: 26px;
+}
+.nav-type{
+	position: relative;
+	left:-105px;
+	width: 300px;
+	height: 80px;
+	/*background: red;*/
+	margin:6px auto;
+
+}
+.nav-type span{
+	position: absolute;
+	width: 90px;
+	height: 30px;
+	/*background: #33aacc;*/
+	color: #000;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 700;
+}
+.nav-type input[type="radio"]{
+	width: 16px;
+	height: 16px;
+	/*background: #66aaff;*/
+}
+.nav-radio{
+	font-size: 14px;
+	position: relative;
+	left:77px;
+	top:4px;
+}
+.way-num{
+	width: 500px;
+	height: 40px;
+	/*background: red;*/
+	margin:6px auto;
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 700;
+}
+.way-num input[type="text"]{
+	position: absolute;
+	top:213px;
+	left:350px;
+	width: 300px;
+	height: 38px;
+	padding-left: 20px;
+}
+.user-work{
+	width: 500px;
+	height: 40px;
+	/*background: red;*/
+	margin:6px auto;
+	font-size: 14px;
+	line-height: 40px;
+}
+.user-work span{
+	font-weight: 700;
+}
+.user-work input[type="radio"]{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+}
+.user-name{
+	width: 500px;
+	height: 40px;
+	/*background: red;*/
+	margin:6px auto;
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 700;
+}
+.user-name input[type="text"]{
+	position: absolute;
+	top:308px;
+	left:350px;
+	width: 300px;
+	height: 38px;
+	padding-left: 20px;
+}
+.user-tel{
+	width: 500px;
+	height: 40px;
+	/*background: red;*/
+	margin:6px auto;
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 700;
+}
+.user-tel input[type="text"]{
+	position: absolute;
+	top:358px;
+	left:350px;
+	width: 300px;
+	height: 38px;
+	padding-left: 20px;
+}
+.user-sugg{
+	width: 500px;
+	height: 40px;
+	/*background: red;*/
+	margin:6px auto;
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 700;
+}
+.user-sugg input[type="textarea"]{
+	position: absolute;
+	top:418px;
+	left:350px;
+	width: 300px;
+	height: 38px;
+	padding-left: 20px;
+}
+.user-sub input[type="submit"]{
+	width: 73px;
+	height: 38px;
+	border-radius: 8px;
+	background: #409EFF;
+	position: relative;
+	left:420px;
+	top:58px;
+}

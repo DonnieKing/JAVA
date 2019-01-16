@@ -43,7 +43,7 @@
 						</div>
 						<div class="three_menu_two_content">
 							<a href="wayTrail.jsp"><div>查件（物流追踪）</div></a>
-							<a href=""><div>运费时效查询</div></a>
+							<a href="expressPrice.jsp"><div>运费时效查询</div></a>
 							<a href=""><div>违禁品查询</div></a>
 						</div>
 					</div>
@@ -77,14 +77,14 @@
 			</s:if>
 			<s:else>
 				<a href="">
-					<div class="username">	
-					欢迎：<img src="./images/login.png"><span style="color:#25A4BB;"><a href="userInfo.jsp">${sessionScope.tel}</a></span>
+					<div class="username" id="username">	
+					欢迎：<img src="./images/login.png"><span style="color:#25A4BB;"><a href="userInfo.jsp" target="_blank">${sessionScope.tel}</a></span>
 					</div>
 				</a>
 			 </s:else>
 			 <s:if test="%{#session.tel =='000000'}">
-				<a href="">
-					<div class="order">查看订单</div>
+				<a href="admin.jsp" target="_blank">
+					<div class="order">后台管理</div>
 				</a>
 			 </s:if>
 			</div>
@@ -117,7 +117,7 @@
 			</div>
 			<div class="shortcut-menu">
 				<div class="menu-item-one">
-					<a href="">
+					<a href="send.jsp" target="_blank">
 						<div class="menu-icon-one">
 							<img src="./images/index_icon1_2.png" alt="">
 						</div>
@@ -125,7 +125,7 @@
 					</a>
 				</div>
 				<div class="menu-item-two">
-					<a href="">
+					<a href="Map.jsp" target="_blank">
 						<div class="menu-icon-two">
 							<img src="./images/index_icon2_2.png" alt="">
 						</div>
@@ -133,7 +133,7 @@
 					</a>
 				</div>
 				<div class="menu-item-three">
-					<a href="">
+					<a href="expressPrice.jsp" target="_blank">
 						<div class="menu-icon-three">
 							<img src="./images/index_icon3_2.png" alt="">
 						</div>
@@ -141,7 +141,7 @@
 					</a>
 				</div>
 				<div class="menu-item-four">
-					<a href="">
+					<a href="customerService.jsp" target="_blank">
 						<div class="menu-icon-four">
 							<img src="./images/index_icon4_2.png" alt="">
 						</div>
@@ -155,42 +155,42 @@
 			<div class="content-business-title">物流业务</div>
 			<div class="content-business-flex">
 				<div class="content-business-detail">
-					<a href="">
+					<a href="https://www.zto.com/business/privacySurfaceSingle.html" target="_blank">
 						<div class="detail-one">
 							 <img src="./images/business_icon1_1.jpg" alt="">
 							 <strong>隐私面单</strong>
 							 <span>个人信息，专业保护</span>
 						</div>
 					</a>
-					<a href="">
+					<a href="https://www.zto.com/business/freshDelivery.html" target="_blank">
 						<div class="detail-one">
 							 <img src="./images/business_icon1_2.jpg" alt="">
 							 <strong>优鲜送</strong>
 							 <span>中转派送，为您优先</span>
 						</div>
 					</a>
-					<a href="">
+					<a href="https://www.zto.com/business/cloudPrint.html" target="_blank">
 						<div class="detail-one">
 							 <img src="./images/business_icon1_3.jpg" alt="">
 							 <strong>云打印</strong>
 							 <span>轻松下单，急速打印</span>
 						</div>
 					</a>
-					<a href="">
+					<a href="https://www.zto.com/business/electronicsSurfaceSingle.html" target="_blank">
 						<div class="detail-one">
 							 <img src="./images/business_icon1_4.jpg" alt="">
 							 <strong>电子面单</strong>
 							 <span>打印结算，高效精准</span>
 						</div>
 					</a>
-					<a href="">
+					<a href="https://www.zto.com/business/payOnDelivery.html" target="_blank">
 						<div class="detail-one">
 							 <img src="./images/business_icon1_5.jpg" alt="">
 							 <strong>货到付款</strong>
 							 <span>闪电付款，周期灵活</span>
 						</div>
 					</a>
-					<a href="">
+					<a href="https://www.zto.com/business/supportValue.html" target="_blank">
 						<div class="detail-one">
 							 <img src="./images/business_icon1_6.jpg" alt="">
 							 <strong>保价</strong>
@@ -223,7 +223,12 @@
 		</div>
 		<div class="country-pic"></div>
 	</div>
-
+	
+	
+	<div class="user-none" id="info">
+			<img src="${sessionScope.image }" alt="">
+			<span>用户名：${sessionScope.userName }</span>
+		</div>
 
 	<script src="./js/move2.js"></script>
 	<script>
@@ -270,7 +275,24 @@
 		 }
 		 
 
-		
+		 var oUserName = document.getElementById('username');
+			var oInfo = document.getElementById('info');
+			oUserName.onmouseover = function()
+			{
+				oInfo.style.display="block";
+			}
+			// oUserName.onmouseout = function()
+			 //{
+			 //	oInfo.style.display="none";
+			 //}
+			oInfo.onmouseover = function()
+			{
+				oInfo.style.display="block";
+			}
+			oInfo.onmouseout = function()
+			{
+				oInfo.style.display="none";
+			}
 
 
 
